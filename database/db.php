@@ -14,7 +14,6 @@ $dog = new Category();
 $dog->setName('Cane');
 $dog->setIcon('fa-solid fa-dog');
 
-
 $croccantini = new Food($dog);
 $croccantini->setProdName('Croccantini');
 $croccantini->setPrice(7.99);
