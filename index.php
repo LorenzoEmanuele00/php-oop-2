@@ -1,5 +1,17 @@
 <?php 
 include_once __DIR__ . '/database/db.php';
+
+try
+{
+    echo 'Pagamento in corso</br>';
+    $user1->checkMoney($cart);
+    echo 'Pagamento riuscito';
+}
+catch (Exception $e)
+{
+    echo 'errore';
+}
+
 ?>
 
 <!DOCTYPE html>

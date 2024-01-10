@@ -7,7 +7,7 @@ class Product
     protected $name;
     protected $image;
     protected $price;
-    public Category $category; // collega classe 
+    public Category $category;
 
     function __construct(Category $_category) {
         $this->category = $_category;

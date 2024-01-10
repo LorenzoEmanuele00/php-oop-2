@@ -4,6 +4,7 @@ include_once __DIR__ . '/../Models/category.php';
 include_once __DIR__ . '/../Models/products.php';
 include_once __DIR__ . '/../Models/food.php';
 include_once __DIR__ . '/../Models/toy.php';
+include_once __DIR__ . '/../Models/user.php';
 
 $cat = new Category();
 $cat->setName('Gatto');
@@ -34,11 +35,20 @@ $osso->setProdName('Osso');
 $osso->setPrice(10);
 $osso->setMaterial('Legno e Tessuto');
 
+$user1 = new User();
+$user1->setUserName('Lorenzo');
+$user1->setMoney(5.50);
+
 $catalog = [
     $croccantini,
     $pesce,
     $tiragraffi,
     $osso,
+];
+
+$cart = [
+    $pesce,
+    $tiragraffi,
 ];
 
 // var_dump($cat);
