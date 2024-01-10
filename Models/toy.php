@@ -9,7 +9,7 @@ class Toy extends Product
         $this->material = $_material;
     }
 
-    public function getExpire()
+    public function getMaterial()
     {
         return $this->material;
     }

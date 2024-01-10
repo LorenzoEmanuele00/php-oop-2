@@ -38,4 +38,9 @@ class Product
     {
        return $this->name;
     }
+
+    public function getCategory()
+    {
+        return $this->category;
+    }
 }
