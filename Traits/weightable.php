@@ -7,11 +7,11 @@ trait Weightable {
         if($_weight > 0) {
             $this->weight = $_weight;
         } else {
-            return 'Error: peso deve essere numero positivo';
+            return 'Il peso deve essere positivo';
         }
     }
 
     public function getWeight() {
-        return $this->weight . 'kg';
+        return $this->weight . 'g';
     }
 }

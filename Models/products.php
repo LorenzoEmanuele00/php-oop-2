@@ -9,6 +9,8 @@ class Product
     protected $price;
     public Category $category;
 
+    use Weightable;
+
     function __construct(Category $_category) {
         $this->category = $_category;
     }
